@@ -27,7 +27,7 @@ jobs:
           cache: npm
 
       - run: npm ci
-      - run: npm run build -- --base-href /champini-git-site/
+      - run: npm run build -- --base-href /
 
       - uses: actions/upload-pages-artifact@v3
         with:
