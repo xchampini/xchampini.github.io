@@ -7,7 +7,7 @@ export const routes: Routes = [
   },
   {
     path: 'projects',
-    loadComponent: () => import('../projects/projects').then((m) => m.Projects),
+    loadChildren: () => import('../projects/projects-routes').then((m) => m.projectsRoutes),
   },
   { path: '**', redirectTo: '' },
 ];

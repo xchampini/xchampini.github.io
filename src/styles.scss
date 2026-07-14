@@ -17,3 +17,16 @@ body {
   color: var(--font-color);
   background-color: var(--background-color);
 }
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+
+  &:active {
+    color: var(--link-active-color);
+  }
+}
